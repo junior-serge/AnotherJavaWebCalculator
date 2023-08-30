@@ -9,8 +9,10 @@
   <url>http://maven.apache.org</url>
      <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-      <maven.compiler.source>1.6</maven.compiler.source>
-      <maven.compiler.target>1.6</maven.compiler.target>
+      <maven.compiler.source>1.7</maven.compiler.source>
+      <maven.compiler.target>1.7</maven.compiler.target>
+       <sonar.login>admin</sonar.login>
+		<sonar.password>admin123</sonar.password>
    </properties>
   <dependencies>
     <dependency>
@@ -26,11 +28,19 @@
     <version>2.5</version>
 </dependency>
 </dependencies>
-<distributionManagement>
-  <repository>
-    <id>releases</id>
-    <!-- <url>http://52.204.135.48:8081/nexus/content/repositories/releases</url> -->    
-    <url>http://binary.ibm.com/nexus/content/repositories/releases</url>
-  </repository>
-</distributionManagement>
+
+	<distributionManagement>
+	    <repository>
+	      <id>nexus</id>
+	      <name>project-release</name>
+	      <url> http://localhost:8081/repository/project-release/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>project-napshot</name>
+	      <url>http://localhost:8081/repository/project-snapshot/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
 </project>
