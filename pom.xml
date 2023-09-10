@@ -32,14 +32,14 @@
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name>project-release</name>
-	      <url> http://localhost:8081/repository/project-release/</url>
+	      <name>calculator-release</name>
+	      <url>http://localhost:8081/repository/calculator-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>project-napshot</name>
-	      <url>http://localhost:8081/repository/project-snapshot/</url>
+	      <name>calculator-snapshots</name>
+	      <url>http://localhost:8081/repository/calculator-snapshots/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
